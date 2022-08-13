@@ -81,6 +81,7 @@ setInterval(function(){
       }, (1 + Math.random() * 3) )
     )
   }
+    console.log("interval");
 }, 200)
 
 function update(){

@@ -73,29 +73,24 @@ window.onfocus = function() {
 let particles = []
 
 setInterval(function(){
-  const topofscroll = document.querySelector("#topofscroll");
-  if(topofscroll) {
-    const background = topofscroll.querySelector(".background");
-      console.log(background);
-    if(!background) {
-      topofscroll.insertAdjacentHTML('beforeend', '<div calss="background"></div>');
-    } else {
-       if (!isPaused){
-         particles.push(
-           new Particle(data[randomInt(0,data.length-1)], {
-               "x": (Math.random() * $(window).width()),
-               "y": $(window).height()
-              }, (1 + Math.random() * 3) )
-           )
-       }
-    }
+  if (!isPaused){
+    particles.push(
+      new Particle(data[randomInt(0,data.length-1)], {
+        "x": (Math.random() * $(window).width()),
+        "y": $(window).height()
+      }, (1 + Math.random() * 3) )
+    )
   }
-}, 200)
+}, 1000)
 
 function update(){
+  const topofscroll = document.querySelector("#topofscroll");
+  topofscroll.insertAdjacentHTML('beforeend', '<div calss="background"></div>');
   particles = particles.filter(function(p){
     return p.move()
   })
   requestAnimationFrame(update.bind(this))
 }
-update()
+
+
+document.addEventListener("DOMContentLoaded", update);

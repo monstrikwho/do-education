@@ -77,7 +77,7 @@ function update(){
   particles = particles.filter(function(p){
     return p.move()
   })
-  // requestAnimationFrame(update.bind(this))
+  requestAnimationFrame(update.bind(this))
 }
 
 document.addEventListener("DOMContentLoaded", update);

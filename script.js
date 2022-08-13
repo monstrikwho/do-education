@@ -2,7 +2,7 @@ class Particle{
     
   constructor(svg, coordinates, friction){
     this.svg = svg
-    this.steps = (window).height()
+    this.steps = ((window).height())/2
     this.item = null
     this.friction = friction
     this.coordinates = coordinates

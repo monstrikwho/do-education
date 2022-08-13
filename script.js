@@ -62,35 +62,22 @@ function randomInt(min,max){
 
 const data = [point, rhombus, pentahedron, circle, x]
 
-let isPaused = false;
-window.onblur = function() {
-    isPaused = true;
-}.bind(this)
-window.onfocus = function() {
-    isPaused = false;
-}.bind(this)
-
 let particles = []
 
 setInterval(function(){
-  if (!isPaused){
     particles.push(
       new Particle(data[randomInt(0,data.length-1)], {
         "x": (Math.random() * $(window).width()),
         "y": $(window).height()
       }, (1 + Math.random() * 3) )
     )
-  }
 }, 1000)
 
 function update(){
-  const topofscroll = document.querySelector("#topofscroll");
-  topofscroll.insertAdjacentHTML('beforeend', '<div calss="background"></div>');
   particles = particles.filter(function(p){
     return p.move()
   })
   requestAnimationFrame(update.bind(this))
 }
-
 
 document.addEventListener("DOMContentLoaded", update);

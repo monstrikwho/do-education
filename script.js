@@ -76,6 +76,7 @@ setInterval(function(){
   const topofscroll = document.querySelector("#topofscroll");
   if(topofscroll) {
     const background = topofscroll.querySelector(".background");
+      console.log(background);
     if(!background) {
       topofscroll.insertAdjacentHTML('beforeend', '<div calss="background"></div>');
     } else {
@@ -89,7 +90,6 @@ setInterval(function(){
        }
     }
   }
-  
 }, 200)
 
 function update(){

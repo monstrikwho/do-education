@@ -2,7 +2,7 @@ class Particle{
     
   constructor(svg, coordinates, friction){
     this.svg = svg
-    this.steps = ($(window).height())/2
+    this.steps = (window).height()
     this.item = null
     this.friction = friction
     this.coordinates = coordinates
@@ -77,7 +77,7 @@ function update(){
   particles = particles.filter(function(p){
     return p.move()
   })
-  requestAnimationFrame(update.bind(this))
+  // requestAnimationFrame(update.bind(this))
 }
 
 document.addEventListener("DOMContentLoaded", update);

@@ -52,6 +52,26 @@
  .moremenu .nav.nav-tabs .nav-link {
    color: #3F8AE0;
    background: rgba(0, 28, 61, 0.05);
+   padding: 8px 12px;
+   border: none;
+   border-radius: 0;
+}
+
+.moremenu .nav.nav-tabs .nav-item {
+  margin: 0;
+}
+
+.moremenu .nav.nav-tabs .nav-link.active {
+  color: #fff;
+  background: #4986CC !important;
+}
+
+.moremenu .nav.nav-tabs ul:first-child a {
+   border-radius: 8px 0 0 8px;
+}
+
+.moremenu .nav.nav-tabs ul:last-child a {
+   border-radius: 8px 0 0 8px;
 }
 
   

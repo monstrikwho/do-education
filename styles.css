@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-#page-header {
+#page-header h1 {
    position: relative;
     top: 50%;  
     width: 24em;
@@ -13,6 +13,7 @@
     transform: translateY(-50%); 
     animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
+    font-family: 'Anonymous Pro', monospace;  
 }
 
 @keyframes typewriter{
@@ -20,7 +21,7 @@
   to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: #034ec3;}
   to{border-right-color: transparent;}
 }
 

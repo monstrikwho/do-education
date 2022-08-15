@@ -2,15 +2,16 @@
   position: relative;
   text-align: center;
   display: block !important;
+  color: #000;
 }
 
 .custom-title::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: #FFE500;
+  left: 5px;
+  right: -5px;
+  height: 10px;
+  background-color: #a378ff;
   z-index: -1;
 }

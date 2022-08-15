@@ -61,17 +61,12 @@
   margin: 0;
 }
 
-.moremenu .nav.nav-tabs .nav-link.active {
-  color: #fff;
-  background: #4986CC !important;
-}
-
-.moremenu .nav.nav-tabs ul:first-child a {
+.moremenu .nav.nav-tabs ul a:first-child {
    border-radius: 8px 0 0 8px;
 }
 
-.moremenu .nav.nav-tabs ul:last-child a {
-   border-radius: 8px 0 0 8px;
+.moremenu .nav.nav-tabs ul a:last-child {
+   border-radius: 0px 8px 8px 0px;
 }
 
   

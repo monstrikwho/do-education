@@ -33,7 +33,7 @@
 }
 
 #page, #region-main, #page .moremenu, #page .moremenu .nav, #page .main-inner {
-  background-color: #EBF2FA;
+  background-color: #EBF2FA !important;
 }
 
   

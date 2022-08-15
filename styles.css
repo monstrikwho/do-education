@@ -61,11 +61,11 @@
   margin: 0;
 }
 
-.moremenu .nav.nav-tabs ul a:first-child {
+.moremenu .nav.nav-tabs ul li:first-child a {
    border-radius: 8px 0 0 8px;
 }
 
-.moremenu .nav.nav-tabs ul a:last-child {
+.moremenu .nav.nav-tabs ul li:last-child a {
    border-radius: 0px 8px 8px 0px;
 }
 

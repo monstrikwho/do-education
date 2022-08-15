@@ -32,7 +32,7 @@
   z-index: -1;
 }
 
-#page, #region-main, #page .moremenu, #page .moremenu .nav, #topofscroll {
+#page, #region-main, #page .moremenu, #page .moremenu .nav, #page .main-inner {
   background-color: #EBF2FA;
 }
 

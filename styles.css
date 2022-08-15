@@ -36,4 +36,22 @@
   background-color: #EBF2FA !important;
 }
 
+.page-context-header {
+  padding: 0.25rem; 
+}
+
+.course-content ul li.section.main {
+  background-color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.1);
+}
+
+ .moremenu .nav.nav-tabs .nav-link {
+   color: #3F8AE0;
+   background: rgba(0, 28, 61, 0.05);
+}
+
   
